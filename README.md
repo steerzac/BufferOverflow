@@ -15,7 +15,7 @@ Writing a buffer overflow vulnerability and exploiting it.
 
 4. Run the injection using your malicious address in the proper LE/BE order
   
-	`python -c 'print "a"*32 . + "\xa0\x84\x04\x08"' | a.out`
+	`python -c 'print "a"*32 + "\xa0\x84\x04\x08"' | ./a.out`
   
 Note: If you are on a LE machine, inject a LE ordered address. Otherwise, inject a BE ordered address.
 My malicious address was 0\x080484a0 on a LE macine.
