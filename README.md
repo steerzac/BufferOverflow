@@ -6,7 +6,7 @@ Writing a buffer overflow vulnerability and exploiting it.
 
 	`$ gcc -fno-stack-protector -m32 vulnerability.c`
 
-2. Detrmine the address of the malicious function (e.g. the function name 'malicious'). You can do this in two ways.
+2. Detrmine the address of the malicious function (e.g. the function named 'malicious'). You can do this in two ways.
 
 	a. Easy method. run `./a.out` and it will print the address for you.<br>
 	b. Cooler method. run `objdump -d a.out | less` and find the address manually.
